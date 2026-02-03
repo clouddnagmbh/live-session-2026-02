@@ -4,6 +4,7 @@ version: 1.0.0
 description: "A simple CAP project."
 parameters:
   enable-parallel-deployments: true
+  deploy_mode: html5-repo
 build-parameters:
   before-all:
     - builder: custom
@@ -40,6 +41,43 @@ modules:
     requires:
       - name: live-session-2026-02-postgres
 
+  - name: live-session-2026-02-app-deployer
+    type: com.sap.application.content
+    path: gen
+    build-parameters:
+      build-result: app/
+      requires:
+        - name: livesession202602footballrostermanager
+          artifacts:
+            - football-roster-manager.zip
+          target-path: app/
+    requires:
+      - name: srv-api
+      - name: live-session-2026-02-auth
+      - name: live-session-2026-02-app-front
+        parameters:
+          content-target: true
+    parameters:
+      config:
+        destinations:
+          - name: srv-api
+            url: ~{srv-api/srv-url}
+            forwardAuthToken: true
+          - name: ui5
+            url: https://ui5.sap.com
+
+  - name: livesession202602footballrostermanager
+    type: html5
+    path: app/football-roster-manager
+    build-parameters:
+      build-result: dist
+      builder: custom
+      commands:
+        - npm ci
+        - npm run build
+      supported-platforms:
+        []
+
 resources:
   - name: live-session-2026-02-auth
     type: org.cloudfoundry.managed-service
@@ -59,3 +97,8 @@ resources:
     parameters:
       service: postgresql-db
       service-plan: trial
+  - name: live-session-2026-02-app-front
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: app-front
+      service-plan: developer
