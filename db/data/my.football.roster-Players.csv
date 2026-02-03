@@ -1,0 +1,13 @@
+ID,firstName,lastName,jerseyNumber,position,team_ID
+6e3a9f4b-2d7c-4a8f-9e1b-0c5d6f7a8b11,Patrick,Mahomes,15,QB,9f3c2c6e-8a6a-4f3e-bb7b-6d8c5f0c1a21
+1b8f2c6d-4e9a-4f7c-8d5b-3a1e0f6c9b22,Travis,Kelce,87,TE,9f3c2c6e-8a6a-4f3e-bb7b-6d8c5f0c1a21
+9d4b1f2a-8e3c-4f6a-9b7d-0c5e6a1f2b33,Brock,Purdy,13,QB,2a7b4b1d-1c0e-4f6a-9e8d-3c4f1e9b7a52
+5a6e7d8c-9b2f-4a1e-8d3c-0f4b6a9e2c44,Christian,McCaffrey,23,RB,2a7b4b1d-1c0e-4f6a-9e8d-3c4f1e9b7a52
+8c7a9d5e-1f2b-4e6a-9d3c-0a4b6f8e7c55,Jordan,Love,10,QB,c6d9a8f4-2f4e-4a91-9d2a-8b1c3e5f7a14
+3f8e2a9d-6c4b-4f7a-8e1d-0b5a6c9f2a66,Stefon,Diggs,14,WR,4e8b1a3f-7c9d-4f0b-8a6e-2d5c1f9b3a77
+2c5f7d8a-9e4b-4a6f-8d1c-0b3e9a7f6c77,Jalen,Hurts,1,QB,b5f1c9a2-8d7e-4e3a-9f6b-1a2c3d4e5f60
+6b9e3c1a-8d5f-4a7e-9b2c-0f4d6a8e7b88,A.J.,Brown,11,WR,b5f1c9a2-8d7e-4e3a-9f6b-1a2c3d4e5f60
+9a1c5b6e-7d8f-4a2c-9e3b-0f6d8a7c5e99,Jason,Kelce,62,OL,b5f1c9a2-8d7e-4e3a-9f6b-1a2c3d4e5f60
+4b8c2a6e-7f5d-4e9a-8c1b-0f3d6a9e2c10,Kirk,Cousins,18,QB,7a3e2d9b-5f8c-4a6e-9b1d-0c2f4e6a8b91
+0d6e3f9a-2b8c-4a1e-9d7b-5c6f8a4e3b11,Bijan,Robinson,7,RB,7a3e2d9b-5f8c-4a6e-9b1d-0c2f4e6a8b91
+a7e9b5c6-8d2f-4a3e-9c1b-0f4d6a8e7b12,Kyle,Pitts,8,TE,7a3e2d9b-5f8c-4a6e-9b1d-0c2f4e6a8b91
