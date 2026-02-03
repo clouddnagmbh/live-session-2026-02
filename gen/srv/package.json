@@ -1,0 +1,32 @@
+{
+  "name": "live-session-2026-02",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "dependencies": {
+    "@cap-js/postgres": "^2.1.2",
+    "@sap/cds": "^9",
+    "express": "^4",
+    "@sap/xssec": "^4"
+  },
+  "devDependencies": {
+    "@cap-js/sqlite": "^2"
+  },
+  "scripts": {
+    "start": "cds-serve",
+    "watch-football-roster-manager": "cds watch --open my.football.roster.footballrostermanager/index.html?sap-ui-xx-viewCache=false --livereload false"
+  },
+  "private": true,
+  "sapux": [
+    "app/football-roster-manager"
+  ],
+  "cds": {
+    "requires": {
+      "[production]": {
+        "auth": "xsuaa"
+      }
+    }
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
