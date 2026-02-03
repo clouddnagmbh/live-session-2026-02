@@ -9,17 +9,13 @@
     "@sap/xssec": "^4"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2",
-    "cds-plugin-ui5": "^0.13.0"
+    "@cap-js/sqlite": "^2"
   },
   "scripts": {
     "start": "cds-serve",
     "watch-football-roster-manager": "cds watch --open my.football.roster.footballrostermanager/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
-  "workspaces": [
-    "app/*"
-  ],
   "sapux": [
     "app/football-roster-manager"
   ],
@@ -29,5 +25,8 @@
         "auth": "xsuaa"
       }
     }
+  },
+  "engines": {
+    "node": ">=20"
   }
 }
